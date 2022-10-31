@@ -16,11 +16,10 @@ This is a basic tool to scale the world to the user height.
 
 ## Todo
 
-**Current Goal:** Make sure the canvas works in VR and the player/scene layout
-is set up correctly.
+**Current Goal:** Start C# Script and set up variables to be used in world scaling.
 
-*10/31 3:52PM* Added essential assets such as ProBuilder and SteamVR in order to
-create basic layout. Added Canvas with a Generate button and 2 teleportation spots for the user.
+*10/31 4:35PM* Fixed collider around the button on the canvas. Removed the
+teleportation points because of a `NullReferenceException` that caused them to not work.
 
 
 ![KanbanBoardProgress](Images_README/KanbanBoardProgress.jpg)
