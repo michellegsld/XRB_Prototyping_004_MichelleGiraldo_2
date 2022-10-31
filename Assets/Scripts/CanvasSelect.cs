@@ -26,15 +26,25 @@ public class CanvasSelect : MonoBehaviour
 
     public void PointerInside(object sender, PointerEventArgs e) {
         //e.target.GetComponent<CanvasButtonT>().buttonColor(hoverColor);
+        if (e.target.GetComponent<Button>())
+        {
+            Debug.Log("Button is being hovered over");
+        }
     }
 
     public void PointerOutside(object sender, PointerEventArgs e) {
-        //e.target.GetComponent<CanvasButtonT>().buttonColor(defaultColor);
+        if (e.target.GetComponent<Button>())
+        {
+            Debug.Log("Bye Button");
+        }
     }
     
     public void PointerClick(object sender, PointerEventArgs e)
     {
-        //e.target.GetComponent<CanvasButtonT>().buttonColor(clickColor);
+        if (e.target.GetComponent<Button>())
+        {
+            Debug.Log("Button Clicked");
+        }
 
     }
 }
